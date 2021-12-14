@@ -12,10 +12,10 @@ export class NavBarComponent implements OnInit {
 
   constructor() {
     this.lenguajes = [
-      {link: "", ruta:"https://imgur.com/dbqQAW8", alt:"Portugues"},
-      {link: "", ruta:"https://imgur.com/Q1KeHQZ", alt:"Chino"},
+      {link: "", ruta:"https://images.emojiterra.com/twitter/v13.1/128px/1f1e7-1f1f7.png", alt:"Portugues"},
+      {link: "", ruta:"https://images.emojiterra.com/twitter/v13.1/128px/1f1e8-1f1f3.png", alt:"Chino"},
       {link: "", ruta:"https://images.emojiterra.com/twitter/v13.1/128px/1f1ea-1f1f8.png", alt:"Español"},
-      {link: "", ruta:"https://images.emojiterra.com/twitter/v13.1/512px/1f1ec-1f1e7.png", alt:"Inglés"}
+      {link: "", ruta:"https://images.emojiterra.com/twitter/v13.1/128px/1f1ec-1f1e7.png", alt:"Inglés"}
     ];
   }
 
