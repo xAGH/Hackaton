@@ -7,13 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nav': '#444546'
+        'fondo': '#444546'
       },
       height: {
-        '25vh': '25vh'
-      },
-      gridTemplateColumns: {
-        '58/auto': '58% auto'
+        '25vh': '30vh'
       },
     },
   },
