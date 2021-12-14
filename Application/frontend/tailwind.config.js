@@ -13,7 +13,7 @@ module.exports = {
         '25vh': '25vh'
       },
       gridTemplateColumns: {
-        '60/40': '60% auto'
+        '58/auto': '58% auto'
       },
     },
   },
