@@ -1,4 +1,4 @@
-<nav class="w-full h-25vh grid grid-cols-3 items-center">
+<nav class="w-full h-30vh grid grid-cols-3 items-center">
 
     <div class="flex justify-center">
         <a *ngIf="volver" href="https://www.youtube.com/">
@@ -9,7 +9,7 @@
         </a>
     </div>
 
-    <h1 class="text-8xl justify-self-center text-white"> {{titulo}} </h1>
+    <h1 class="text-8xl justify-self-center text-letra"> {{titulo}} </h1>
 
     <section class="flex justify-center">
         <div class="group inline-block">
@@ -29,7 +29,9 @@
             <ul class="rounded-sm transform scale-0 group-hover:scale-100 absolute 
             transition duration-150 ease-in-out origin-top">
                 <li *ngFor="let item of lenguajes" class="rounded-sm px-3 py-1">
-                    <a href="{{ item.link }}" *ngIf="!item.selected" (click)="seleccionIdioma(lenguajes.indexOf(item))"><img src="{{ item.ruta }}" alt=" {{ item.alt }} " class="w-12"></a>
+                    <a href="{{ item.link }}" *ngIf="!item.selected" (click)="seleccionIdioma(lenguajes.indexOf(item))">
+                        <img src="{{ item.ruta }}" alt=" {{ item.alt }} " class="w-12">
+                    </a>
                 </li>
             </ul>
         </div>

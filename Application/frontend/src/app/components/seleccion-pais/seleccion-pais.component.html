@@ -1,1 +1,42 @@
-<p>seleccion-pais works!</p>
+<section class="grid grid-rows-2 h-full">
+    <div class="flex justify-center items-center gap-24">
+        <label class="text-letra text-3xl" for="paises">Pais</label>
+
+        <select name="paises" id="paises" (change)="seleccionPais($event.target)"
+        class="bg-letra px-5 focus:outline-none rounded-md py-2 text-2xl focus:ring-4 ring-blue-600">
+            <option> - </option>
+            <option value="{{ pais.codigo }}" *ngFor="let pais of paises">
+                {{ pais.nombre }} - {{ pais.codigo }}
+            </option>
+        </select>
+
+        <img class="img-responsive" src="{{ bandera_pais_actual }}" alt="{{ alt_bandera }}">
+
+    </div>
+
+    <div class="flex justify-center ">
+        <div class="w-1/2 my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
+            <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-gray-50 shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider text-2xl">Especialidad</th>
+                            <th class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider text-2xl">Fullname</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                            <tr *ngFor="let numero of numeros">
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-gray-700 border-gray-500 leading-5 text-2xl">{{ numero.especialidad }}</td>
+                                <td class="px-6 py-4 whitespace-no-wrap border-b text-gray-700 border-gray-500 leading-5 text-2xl">{{ numero.numero }}</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+

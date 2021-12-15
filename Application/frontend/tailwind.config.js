@@ -7,10 +7,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'fondo': '#444546'
+        'fondo': '#444546',
+        'letra': '#E6EFE9',
+        'aaa': '#aaa'
       },
       height: {
-        '25vh': '30vh'
+        '30vh': '30vh',
+        '50vh': '50vh'
+      },
+      backgroundImage: {
+        "flecha": 'https://images.emojiterra.com/twitter/v13.1/128px/1f1fb-1f1ea.png'
       },
     },
   },
