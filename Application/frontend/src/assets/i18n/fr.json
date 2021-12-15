@@ -17,9 +17,14 @@
         "Especialidad":"spécialité"
     },
     "pais": {
-        "Colombia":"Colombie",
-        "Francia":"France",
-        "Brazil":"Brésil",
-        "Reino Unido":"Royaume-Uni"
+        "colombia":"Colombie",
+        "francia":"France",
+        "brazil":"Brésil",
+        "reinoUnido":"Royaume-Uni"
+    },
+    "especialidades":{
+        "policia":"Police",
+        "bomberos":"Sapeurs pompiers",
+        "emergencias":"urgences"
     }
 }

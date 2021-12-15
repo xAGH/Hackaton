@@ -19,9 +19,14 @@
 
     },
     "pais": {
-        "Colombia":"Colombia",
-        "Francia":"Francia",
-        "Brazil":"Brazil",
-        "Reino Unido":"Reino Unido"
+        "colombia":"Colombia",
+        "francia":"Francia",
+        "brazil":"Brazil",
+        "reinoUnido":"Reino Unido"
+    },
+    "especialidades":{
+        "policia":"Policia",
+        "bomberos":"Bomberos",
+        "emergencias":"Emergencias"
     }
 }

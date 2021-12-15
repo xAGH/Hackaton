@@ -21,5 +21,11 @@
         "Francia":"França",
         "Brazil":"Brasil",
         "Reino Unido":"Reino Unido"
+    },
+    "especialidades":{
+        "policia":"polícia",
+        "bomberos":"bombeiros",
+        "emergencias":"emergências"
     }
+    
 }
