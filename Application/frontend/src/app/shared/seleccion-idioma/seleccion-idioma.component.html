@@ -3,7 +3,7 @@
         <button class="outline-none focus:outline-none px-3 py-1 
         rounded-sm flex items-center">
             <div *ngFor="let item of lenguajes">
-                <img *ngIf="item.selected" class="pr-1 font-semibold flex-1 w-14" src="{{ item.ruta }}"/>
+                <img *ngIf="active() == item.code" class="pr-1 font-semibold flex-1 w-14" src="{{ item.ruta }}"/>
             </div>
             <span>
                 <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
@@ -16,9 +16,9 @@
         <ul class="rounded-sm transform scale-0 group-hover:scale-100 absolute 
         transition duration-150 ease-in-out origin-top">
             <li *ngFor="let item of lenguajes" class="rounded-sm px-3 py-1">
-                <a href="{{ item.link }}" *ngIf="!item.selected" (click)="elegirIdioma(lenguajes.indexOf(item))">
-                    <img src="{{ item.ruta }}" alt=" {{ item.alt }} " class="w-12">
-                </a>
+                <span *ngIf="active() != item.code" (click)="elegirIdioma(lenguajes.indexOf(item))">
+                    <img src="{{ item.ruta }}" alt=" {{ item.alt }} " class="w-12 cursor-pointer">
+                </span>
             </li>
         </ul>
     </div>

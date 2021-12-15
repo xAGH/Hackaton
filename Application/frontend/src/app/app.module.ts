@@ -13,6 +13,11 @@ import { InstructionsComponent } from './components/instructions/instructions.co
 import { HomeComponent } from './pages/home/home.component';
 import { SeleccionIdiomaComponent } from './shared/seleccion-idioma/seleccion-idioma.component';
 
+// Modulo de traduccion
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,17 @@ import { SeleccionIdiomaComponent } from './shared/seleccion-idioma/seleccion-id
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [ HttpClient ]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

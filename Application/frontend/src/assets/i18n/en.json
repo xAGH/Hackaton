@@ -1,0 +1,13 @@
+{
+    "principal": {
+        "INFOHELP":"INFOHELP",
+        "footer": "Hackaton 2021 © All rights reserved",
+        "Noticias": "Notices",
+        "Test psicológico":"Psychological test",
+        "Recomendaciones":"Recommendations",
+        "Números de emergencia":"Emergency numbers",
+        "correos": "I want to receive news to my email",
+        "sus": "SUBSCRIBE",
+        "placeholder": "your@email.com"
+    }
+}
