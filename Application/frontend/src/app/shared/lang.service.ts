@@ -17,7 +17,7 @@ export class LangService{
         return this.activeLang;
     }
 
-    setActiveLang(aL:string) {
-        this.activeLang = aL;
+    setActiveLang(code:string) {
+        this.activeLang = code;
     }
 }

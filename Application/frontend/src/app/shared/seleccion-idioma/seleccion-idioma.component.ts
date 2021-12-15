@@ -15,7 +15,7 @@ export class SeleccionIdiomaComponent implements OnInit {
     private translate: TranslateService,
     private langService: LangService,
   ) {
-    this.translate.setDefaultLang(langService.getActiveLang());
+    this.translate.setDefaultLang(this.active());
     this.lenguajes = [
       {ruta:"https://images.emojiterra.com/twitter/v13.1/128px/1f1ea-1f1f8.png", alt:"Español", code:"es"},
       {ruta:"https://images.emojiterra.com/twitter/v13.1/128px/1f1ec-1f1e7.png", alt:"Inglés", code:"en"},
@@ -37,8 +37,6 @@ export class SeleccionIdiomaComponent implements OnInit {
         this.langService.setActiveLang(lenguaje.code)
       }
     }
-    this.translate.use(this.langService.getActiveLang());
-    console.log(this.langService.getActiveLang())
+    this.translate.use(this.active());
   }
-
 }
