@@ -10,6 +10,7 @@ import { InputNoticiasComponent } from './components/input-noticias/input-notici
 import { NumerosDesastreComponent } from './components/numeros-desastre/numeros-desastre.component';
 import { SeleccionPaisComponent } from './components/seleccion-pais/seleccion-pais.component';
 import { NumerosEmergenciaComponent } from './pages/numeros-emergencia/numeros-emergencia.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NumerosEmergenciaComponent } from './pages/numeros-emergencia/numeros-e
     InputNoticiasComponent,
     NumerosDesastreComponent,
     SeleccionPaisComponent,
-    NumerosEmergenciaComponent
+    NumerosEmergenciaComponent,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,

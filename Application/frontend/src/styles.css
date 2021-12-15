@@ -4,6 +4,4 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html{
-    background-color:#444546;
-}
+html { background-color: #444546; }
