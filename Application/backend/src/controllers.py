@@ -8,7 +8,6 @@ class PaisesController(MethodView):
 
     def __init__(self):
         self.model = Database()
-        self.services = Services()
 
     def get(self):
         code = request.args.get("code")
@@ -24,10 +23,28 @@ class PaisesController(MethodView):
         }), 200)
 
     def post(self):
-        return make_response(jsonify({
-            "response": "Se ha registrado el pais",
-        }), 200)
+        if request.is_json:
+            try:
+                nombre = request.json.get("nombre")
+                codigo = request.json.get("codigo")
+                bandera = request.json.get("bandera")
+                numeros = request.json.get("numeros")
 
+                if nombre != None and codigo != None and bandera != None and numeros != None:
+                    self.model.insert("paises", [{"nombre":nombre, "codigo":codigo, "bandera":bandera, "numeros":numeros}])
+
+                    return make_response(jsonify({
+                        "response": "Se ha registrado el pais",
+                    }), 200)
+
+            except:
+                pass
+
+        return make_response(jsonify({
+                "response": "Error, send me a json format",
+                "expected_data":{"nombre":"pais", "codigo":"codigo", "bandera":"ruta", "numeros":[{"especialidad":"numero"}]},
+                "status":400
+            }), 400)
 
 class UsuariosController(MethodView):
 

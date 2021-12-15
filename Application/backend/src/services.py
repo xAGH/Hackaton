@@ -74,4 +74,3 @@ style="padding: 0%;
 
         mailServer.sendmail(email, user_email, msg.as_string())
         mailServer.close()
-

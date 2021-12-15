@@ -42,12 +42,12 @@ class Database():
         post = self.db[colection].insert_many(objects)
         return json.loads(json_util.dumps(post.inserted_ids))
 
-    def createIndex(self, colection, new_index):
-        self.db[colection].create_index([(new_index, pymongo.ASCENDING)], unique=True)
-        return "Indices: " ,sorted(list(self.db[colection].index_information()))
-
     def update(self, colection, query, data):
         self.db[colection].update_one(query, {"$set": data})
 
     def delete(self, colection, data):
         self.db[colection].delete_one(data)
+
+    def createIndex(self, colection, new_index):
+        self.db[colection].create_index([(new_index, pymongo.ASCENDING)], unique=True)
+        return "Indices: " ,sorted(list(self.db[colection].index_information()))
