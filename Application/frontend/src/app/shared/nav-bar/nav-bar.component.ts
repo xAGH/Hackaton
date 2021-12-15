@@ -24,7 +24,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  seleccionIdioma(seleccionado: any) {
+  seleccionIdioma(seleccionado: number) {
     for (let lenguaje of this.lenguajes){
       lenguaje.selected = false;
     }

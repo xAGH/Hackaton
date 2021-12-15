@@ -7,11 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'fondo': '#444546'
+        'fondo': '#444546',
+        'letra': '#E6EFE9',
       },
-      height: {
-        '25vh': '30vh'
+
+      gridTemplateRows: {
+        'numeros': '25vh 70vh auto',
+        '33/auto': '33% auto'
       },
+
     },
   },
   variants: {

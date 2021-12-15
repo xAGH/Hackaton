@@ -9,6 +9,7 @@ import { BotonMenuComponent } from './components/boton-menu/boton-menu.component
 import { InputNoticiasComponent } from './components/input-noticias/input-noticias.component';
 import { NumerosDesastreComponent } from './components/numeros-desastre/numeros-desastre.component';
 import { SeleccionPaisComponent } from './components/seleccion-pais/seleccion-pais.component';
+import { NumerosEmergenciaComponent } from './pages/numeros-emergencia/numeros-emergencia.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SeleccionPaisComponent } from './components/seleccion-pais/seleccion-pa
     BotonMenuComponent,
     InputNoticiasComponent,
     NumerosDesastreComponent,
-    SeleccionPaisComponent
+    SeleccionPaisComponent,
+    NumerosEmergenciaComponent
   ],
   imports: [
     BrowserModule,
