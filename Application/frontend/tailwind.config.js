@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nav': '#444546'
+        'nav': '#444546',
+        'but': '#E6EFE9',
+        'butText': '#444546'
       },
       height: {
         '25vh': '25vh'
