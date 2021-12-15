@@ -9,15 +9,13 @@ module.exports = {
       colors: {
         'fondo': '#444546',
         'letra': '#E6EFE9',
-        'aaa': '#aaa'
       },
-      height: {
-        '30vh': '30vh',
-        '50vh': '50vh'
+
+      gridTemplateRows: {
+        'numeros': '25vh 70vh auto',
+        '33/auto': '33% auto'
       },
-      backgroundImage: {
-        "flecha": 'https://images.emojiterra.com/twitter/v13.1/128px/1f1fb-1f1ea.png'
-      },
+
     },
   },
   variants: {

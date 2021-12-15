@@ -21,7 +21,7 @@ export class SeleccionPaisComponent implements OnInit {
       },
       {nombre:"Venezuela", codigo:"VE", bandera:"https://images.emojiterra.com/twitter/v13.1/128px/1f1fb-1f1ea.png",numeros:
         [
-          {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}
+          {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}, {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}, {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}
         ]
       }
     ];
