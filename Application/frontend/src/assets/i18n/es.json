@@ -9,6 +9,10 @@
         "correos":"Quiero recibir noticias a mi correo.",
         "sus": "SUSCRIBIRME",
         "placeholder": "tu@correo.com",
-        "pais":"País"
+        "pais":"País",
+        "disaster":"Tipo de desastre",
+        "numero":"Número",
+        "RecomendacionTexto":"Texto recomendacion",
+        "TextoNoticia":"Texto noticias"
     }
 }
