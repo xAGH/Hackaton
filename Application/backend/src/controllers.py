@@ -3,7 +3,6 @@ from flask.views import MethodView
 from src.models import Database
 from src.services import Services
 
-
 class PaisesController(MethodView):
 
     def __init__(self):
@@ -128,3 +127,4 @@ class UsuariosController(MethodView):
                 "expected_data":{"email":"Jhon@Doe.com"},
                 "status":400
             }), 400)
+
