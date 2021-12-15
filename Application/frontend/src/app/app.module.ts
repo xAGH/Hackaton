@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// Modulo de traduccion
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
@@ -13,13 +18,10 @@ import { InstructionsComponent } from './components/instructions/instructions.co
 import { HomeComponent } from './pages/home/home.component';
 import { SeleccionIdiomaComponent } from './shared/seleccion-idioma/seleccion-idioma.component';
 
-// Modulo de traduccion
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TestPsicologicoComponent } from './pages/test-psicologico/test-psicologico.component';
 import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,10 @@ import { RecomendacionesComponent } from './pages/recomendaciones/recomendacione
     InstructionsComponent,
     HomeComponent,
     SeleccionIdiomaComponent,
-    TestPsicologicoComponent,
     NoticiasComponent,
-    RecomendacionesComponent
+    RecomendacionesComponent,
+    CarouselComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
