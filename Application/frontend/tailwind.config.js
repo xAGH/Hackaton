@@ -13,6 +13,7 @@ module.exports = {
 
       gridTemplateRows: {
         'numeros': '25vh 70vh auto',
+        'home': '25vh 55vh 15vh auto',
         '33/auto': '33% auto'
       },
 

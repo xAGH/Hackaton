@@ -1,7 +1,7 @@
-<nav class="w-full grid grid-cols-3 items-center">
+<nav class="w-full grid grid-cols-3 items-center h-full">
 
     <div class="flex justify-center">
-        <a *ngIf="volver" href="https://www.youtube.com/">
+        <a (click)="volver()" class="cursor-pointer">
             <svg width="48" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" 
                 height="48" viewBox="0 0 48 48" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 16 16">
                 <path d="m39,6c4.971,0 9,4.029 9,9v12c0,4.971-4.029,9-9,9h-27v3c0,1.212-.732,2.31-1.851,2.772-1.122,.462-2.412,.204-3.27-.651l-6-6c-.585-.585-.879-1.353-.879-2.121 0-.768 .294-1.536 .879-2.121l6-6c.858-.858 2.148-1.113 3.27-.651 1.119,.462 1.851,1.56 1.851,2.772v3h27c1.659,0 3-1.341 3-3v-12c0-1.656-1.341-3-3-3h-24c-1.656,0-3-1.344-3-3 0-1.656 1.344-3 3-3h24Z"/>
@@ -9,31 +9,8 @@
         </a>
     </div>
 
-    <h1 class="text-8xl justify-self-center text-letra"> {{titulo}} </h1>
+    <h1 class="text-7xl justify-self-center text-letra text-center"> {{titulo}} </h1>
 
-    <section class="flex justify-center">
-        <div class="group inline-block">
-            <button class="outline-none focus:outline-none px-3 py-1 
-            rounded-sm flex items-center">
-                <div *ngFor="let item of lenguajes">
-                    <img *ngIf="item.selected" class="pr-1 font-semibold flex-1 w-14" src="{{ item.ruta }}"/>
-                </div>
-                <span>
-                    <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
-                    transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" stroke="#ffffff" fill="#ffffff"/>
-                    </svg>
-                </span>
-            </button>
-            <ul class="rounded-sm transform scale-0 group-hover:scale-100 absolute 
-            transition duration-150 ease-in-out origin-top">
-                <li *ngFor="let item of lenguajes" class="rounded-sm px-3 py-1">
-                    <a href="{{ item.link }}" *ngIf="!item.selected" (click)="seleccionIdioma(lenguajes.indexOf(item))">
-                        <img src="{{ item.ruta }}" alt=" {{ item.alt }} " class="w-12">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <app-seleccion-idioma></app-seleccion-idioma>
+
 </nav>
