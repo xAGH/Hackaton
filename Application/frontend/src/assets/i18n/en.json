@@ -8,6 +8,7 @@
         "Números de emergencia":"Emergency numbers",
         "correos": "I want to receive news to my email",
         "sus": "SUBSCRIBE",
-        "placeholder": "your@email.com"
+        "placeholder": "your@email.com",
+        "pais":"Country"
     }
 }

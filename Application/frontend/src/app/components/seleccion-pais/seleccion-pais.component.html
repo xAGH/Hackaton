@@ -1,8 +1,8 @@
 <section class="grid grid-rows-2 h-full">
     <div class="grid grid-cols-3 w-full">
-        <label class="text-letra text-4xl justify-self-end my-auto" for="paises">Pais: </label>
+        <label class="text-letra text-4xl justify-self-end my-auto" for="paises">{{ 'principal.pais' | translate }}:</label>
 
-        <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center">
             <select name="paises" id="paises" (change)="seleccionPais($event.target)"
             class="bg-letra px-5 focus:outline-none rounded-md py-2 text-2xl focus:ring-4 ring-blue-600">
                 <option> - </option>

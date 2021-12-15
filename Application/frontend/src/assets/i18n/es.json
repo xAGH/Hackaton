@@ -8,6 +8,7 @@
         "Números de emergencia":"Números de emergencia",
         "correos":"Quiero recibir noticias a mi correo.",
         "sus": "SUSCRIBIRME",
-        "placeholder": "tu@correo.com"
+        "placeholder": "tu@correo.com",
+        "pais":"País"
     }
 }
