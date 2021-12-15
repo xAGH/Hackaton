@@ -13,6 +13,13 @@
         "disaster": "Tipo de desastre",
         "numero": "Número",
         "RecomendacionTexto": "Texto de recomendação",
-        "TextoNoticia": "Texto de notícias"
+        "TextoNoticia": "Texto de notícias",
+        "Especialidad":"especialidade"
+    },
+    "pais": {
+        "Colombia":"Colômbia",
+        "Francia":"França",
+        "Brazil":"Brasil",
+        "Reino Unido":"Reino Unido"
     }
 }

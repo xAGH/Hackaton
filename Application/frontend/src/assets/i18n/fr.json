@@ -13,6 +13,13 @@
         "disaster":"Type de catastrophe",
         "numero":"Numéro",
         "RecomendacionTexto":"Texte de recommandation",
-        "TextoNoticia":"Texte d'actualité"
+        "TextoNoticia":"Texte d'actualité",
+        "Especialidad":"spécialité"
+    },
+    "pais": {
+        "Colombia":"Colombie",
+        "Francia":"France",
+        "Brazil":"Brésil",
+        "Reino Unido":"Royaume-Uni"
     }
 }

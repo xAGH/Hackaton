@@ -1,20 +1,25 @@
 {
     "principal": {
-        "INFOHELP":"INFOHELP",
+        "INFOHELP": "INFOHELP",
         "footer": "Hackaton 2021 © All rights reserved",
         "Noticias": "Notices",
-        "Test psicológico":"Psychological test",
-        "Recomendaciones":"Recommendations",
-        "Números de emergencia":"Emergency lines",
+        "Test psicológico": "Psychological test",
+        "Recomendaciones": "Recommendations",
+        "Números de emergencia": "Emergency lines",
         "correos": "I want to receive news to my email",
         "sus": "SUBSCRIBE",
         "placeholder": "your@email.com",
-        "pais":"Country",
-        "disaster":"Disaster type",
-        "numero":"Number",
-        "RecomendacionTexto":"Recommendation text",
-        "TextoNoticia":"News text"
-        
-
+        "pais": "Country",
+        "disaster": "Disaster type",
+        "numero": "Number",
+        "RecomendacionTexto": "Recommendation text",
+        "TextoNoticia": "News text",
+        "Especialidad":"especialidade"
+    },
+    "pais": {
+        "Colombia": "Colombia",
+        "Francia": "France",
+        "Brazil": "Brazil",
+        "Reino Unido": "United Kingdom"
     }
 }

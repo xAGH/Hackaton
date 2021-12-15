@@ -13,10 +13,15 @@
         "disaster":"Tipo de desastre",
         "numero":"Número",
         "RecomendacionTexto":"Texto recomendacion",
-        "TextoNoticia":"Texto noticias"
+        "TextoNoticia":"Texto noticias",
+        "Especialidad":"Especialidad"
+
+
     },
     "pais": {
         "Colombia":"Colombia",
-        "Venezuela":"Venezuela"
+        "Francia":"Francia",
+        "Brazil":"Brazil",
+        "Reino Unido":"Reino Unido"
     }
 }
