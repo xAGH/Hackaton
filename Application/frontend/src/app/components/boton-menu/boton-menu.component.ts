@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BotonMenuComponent implements OnInit {
 
-  constructor() { }
+  botones: any;
+
+  constructor() {
+    this.botones = [
+      {nombre:"Noticias", ruta:"/noticias"},
+      {nombre:"Test psicológico", ruta:"/test_psicologico"},
+      {nombre:"Recomendaciones", ruta:"/recomendaciones"},
+      {nombre:"Números de emergencia", ruta:"/numeros_emergencia"},
+    ];
+  }
 
   ngOnInit(): void {
   }

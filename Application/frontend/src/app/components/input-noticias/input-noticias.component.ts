@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-noticias.component.css']
 })
 export class InputNoticiasComponent implements OnInit {
+   
+  constructor() { 
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
+
   }
 
 }
