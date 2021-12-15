@@ -14,5 +14,9 @@
         "numero":"Número",
         "RecomendacionTexto":"Texto recomendacion",
         "TextoNoticia":"Texto noticias"
+    },
+    "pais": {
+        "Colombia":"Colombia",
+        "Venezuela":"Venezuela"
     }
 }

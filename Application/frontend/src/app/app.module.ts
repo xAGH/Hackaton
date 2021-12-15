@@ -17,6 +17,9 @@ import { SeleccionIdiomaComponent } from './shared/seleccion-idioma/seleccion-id
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TestPsicologicoComponent } from './pages/test-psicologico/test-psicologico.component';
+import { NoticiasComponent } from './pages/noticias/noticias.component';
+import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NumerosEmergenciaComponent,
     InstructionsComponent,
     HomeComponent,
-    SeleccionIdiomaComponent
+    SeleccionIdiomaComponent,
+    TestPsicologicoComponent,
+    NoticiasComponent,
+    RecomendacionesComponent
   ],
   imports: [
     BrowserModule,
