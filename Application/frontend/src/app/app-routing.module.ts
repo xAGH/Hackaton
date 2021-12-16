@@ -4,7 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { NumerosEmergenciaComponent } from './pages/numeros-emergencia/numeros-emergencia.component';
 import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
-import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
