@@ -109,7 +109,7 @@ class UsuariosController(MethodView):
             "status":200
         }), 200)
 
-    def patch(self):
+    def put(self):
         if request.is_json:
             try:
                 email = request.json['email']
@@ -128,3 +128,66 @@ class UsuariosController(MethodView):
                 "status":400
             }), 400)
 
+class ArticulosNoticiasController(MethodView):
+    
+    def __init__(self):
+        self.model = Database()
+
+    def get(self):
+        data = self.model.getAll("noticias")
+        return make_response(jsonify({
+            "response": data,
+            "status": 200
+        }), 200)
+
+    def post(self):
+        if request.is_json:
+
+            texto = request.json["texto"]
+            img = request.json["img"]
+
+            process = self.model.insert("noticias", [{"texto": texto, "img": img}])
+
+            return make_response(jsonify({
+                        "response": process,
+                        "status":200
+                    }), 200)
+
+        return make_response(jsonify({
+                "response": "Error, send me a json format",
+                "expected_data":{"email":"Jhon@Doe.com"},
+                "status":400
+            }), 400)
+
+
+
+class ArticulosRecomendacionesController(MethodView):
+
+    def __init__(self):
+        self.model = Database()
+
+    def get(self):
+        data = self.model.getAll("recomendaciones")
+        return make_response(jsonify({
+            "response": data,
+            "status": 200
+        }), 200)
+
+    def post(self):
+        if request.is_json:
+
+            texto = request.json["texto"]
+            img = request.json["img"]
+
+            process = self.model.insert("recomendaciones", [{"texto": texto, "img": img}])
+
+            return make_response(jsonify({
+                        "response": process,
+                        "status":200
+                    }), 200)
+
+        return make_response(jsonify({
+                "response": "Error, send me a json format",
+                "expected_data":{"email":"Jhon@Doe.com"},
+                "status":400
+            }), 400)
