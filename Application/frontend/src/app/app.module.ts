@@ -22,7 +22,7 @@ import { SeleccionIdiomaComponent } from './shared/seleccion-idioma/seleccion-id
 import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { RecomendacionesComponent } from './pages/recomendaciones/recomendaciones.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
-import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
