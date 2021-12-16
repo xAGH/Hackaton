@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Pais } from 'src/app/interfaces/paises';
+import { PaisesService } from 'src/app/services/paises.service';
 
 @Component({
   selector: 'app-seleccion-pais',
@@ -7,27 +9,20 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SeleccionPaisComponent implements OnInit {
 
-  @Input() paises: any;
+  paises: Pais[];
   bandera_pais_actual: string;
   alt_bandera: string;
   numeros: any;
   
-  constructor() {
-    this.paises = [
-      {nombre:"Colombia", codigo:"CO", bandera:"https://images.emojiterra.com/twitter/v13.1/128px/1f1e8-1f1f4.png", numeros:
-        [
-          {especialidad: "policia", numero:123}, {especialidad:"bomberos", numero:"234"}
-        ]
-      },
-      {nombre:"Venezuela", codigo:"VE", bandera:"https://images.emojiterra.com/twitter/v13.1/128px/1f1fb-1f1ea.png",numeros:
-        [
-          {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}, {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}, {especialidad: "policia", numero:456}, {especialidad:"bomberos", numero:789},{especialidad:"bomberos", numero:789} ,{especialidad:"bomberos", numero:789}
-        ]
-      }
-    ];
-  }
+  constructor(
+    private paisesService: PaisesService 
+  ) {}
 
   ngOnInit(): void {
+    this.paisesService.getPaises().
+    subscribe((res:any) => {
+      this.paises = res;
+    })
   }
 
   seleccionPais(codigoPais:any) {
@@ -36,7 +31,7 @@ export class SeleccionPaisComponent implements OnInit {
     this.numeros = [];
     for (let pais of this.paises) {
 
-      if (pais.codigo === codigoPais.value) {
+      if (pais.pais === codigoPais.value) {
         this.bandera_pais_actual = pais.bandera;
         this.alt_bandera = pais.codigo;
         this.numeros = pais.numeros;

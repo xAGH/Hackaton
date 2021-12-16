@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 // Modulo de traduccion
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -41,6 +42,7 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
     PageNotFoundComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
