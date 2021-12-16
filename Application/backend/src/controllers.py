@@ -69,13 +69,13 @@ class UsuariosController(MethodView):
             elif verify_email.get("active"):
                 return make_response(jsonify({
                         "response": "El correo ya está registrado y activado",
-                        "status":400
-                    }), 400)
+                        "status":200
+                    }), 200)
 
             return make_response(jsonify({
                         "response": "El correo ya está registrado pero no esta activado.",
-                        "status":400
-                    }), 400)
+                        "status":200
+                    }), 200)
 
         return make_response(jsonify({
                 "response": "Error, send me a json format",
