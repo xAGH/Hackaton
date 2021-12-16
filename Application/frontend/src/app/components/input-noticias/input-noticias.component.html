@@ -5,10 +5,10 @@
 
     <form class="flex">
 
-        <input id="noticias" type="text" name="noticias" placeholder="{{ 'principal.placeholder' | translate }}"
+        <input [(ngModel)]="email" id="noticias" type="text" name="noticias" placeholder="{{ 'principal.placeholder' | translate }}"
             class="px-4 py-2 italic font-medium rounded-l-lg focus:outline-none focus:placeholder-gray-700"/>
 
-        <button class="px-4 rounded-r-lg text-gray-500 hover:text-gray-900 font-bold
+        <button (click)="addUser()" class="px-4 rounded-r-lg text-gray-500 hover:text-gray-900 font-bold
         bg-blue-500 p-4 border-blue-500 border">
             {{ 'principal.sus' | translate }}
         </button>

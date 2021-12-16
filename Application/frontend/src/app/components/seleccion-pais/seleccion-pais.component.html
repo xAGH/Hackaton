@@ -1,18 +1,18 @@
 <section class="grid grid-rows-2 h-full">
     <div class="grid grid-cols-3 w-full">
-        <label class="text-letra text-4xl justify-self-end my-auto" for="paises">{{ 'principal.pais' | translate }}:</label>
+        <label class="text-letra text-4xl justify-self-end mr-20 my-auto" for="paises">{{ 'principal.pais' | translate }}:</label>
 
     <div class="flex justify-center items-center">
             <select name="paises" id="paises" (change)="seleccionPais($event.target)"
             class="bg-letra px-5 focus:outline-none rounded-md py-2 text-2xl focus:ring-4 ring-blue-600">
                 <option> - </option>
-                <option value="{{ pais.codigo }}" *ngFor="let pais of paises">
-                    {{ pais.nombre }} - {{ pais.codigo }}
+                <option value="{{ pais.pais }}" *ngFor="let pais of paises">
+                    {{ 'pais.' + pais.pais | translate}} - {{ pais.codigo }}
                 </option>
             </select>
         </div>
 
-        <div class="flex justify-start items-center">
+        <div class="flex justify-start ml-20 items-center">
             <img class="img-responsive" src="{{ bandera_pais_actual }}" alt="{{ alt_bandera }}">
         </div>
     </div>

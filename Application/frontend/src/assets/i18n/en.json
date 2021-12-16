@@ -5,10 +5,16 @@
         "Noticias": "Notices",
         "Test psicológico":"Psychological test",
         "Recomendaciones":"Recommendations",
-        "Números de emergencia":"Emergency numbers",
+        "Números de emergencia":"Emergency lines",
         "correos": "I want to receive news to my email",
         "sus": "SUBSCRIBE",
         "placeholder": "your@email.com",
-        "pais":"Country"
+        "pais":"Country",
+        "disaster":"Disaster type",
+        "numero":"Number",
+        "RecomendacionTexto":"Recommendation text",
+        "TextoNoticia":"News text"
+        
+
     }
 }

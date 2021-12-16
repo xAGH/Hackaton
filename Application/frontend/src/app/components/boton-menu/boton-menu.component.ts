@@ -11,10 +11,10 @@ export class BotonMenuComponent implements OnInit {
 
   constructor() {
     this.botones = [
+      {nombre:"Números de emergencia", ruta:"/numeros_emergencia"},
+      {nombre:"Recomendaciones", ruta:"/recomendaciones"},
       {nombre:"Noticias", ruta:"/noticias"},
       {nombre:"Test psicológico", ruta:"/test_psicologico"},
-      {nombre:"Recomendaciones", ruta:"/recomendaciones"},
-      {nombre:"Números de emergencia", ruta:"/numeros_emergencia"},
     ];
   }
 
